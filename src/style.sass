@@ -1,0 +1,69 @@
+$red: #f16441
+$brown: #2f2a26
+$logo_ratio: 1.0700636943
+
+$mobile: "screen and ( max-width: 500px )"
+
+body, html
+  margin: 0
+
+h1, h2, h3, h4, p, i
+  font-family: roboto
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.content
+  text-align: center
+  padding-left: 6vw
+  padding-right: 6vw
+  padding-top: 2vw
+  padding-bottom: 2vw
+
+.logo
+  height: 80px
+  width: 80px * $logo_ratio
+
+.logo.large
+  height: 200px
+  width: 200px * $logo_ratio
+
+.light
+  background-color: white
+  a
+    color: black
+
+.dark
+  background-color: $brown
+  color: white
+  a
+    color: white
+
+.divider
+  background-color: $red
+  height: 3px
+  margin: 12px 6vw
+
+.row
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  @media #{$mobile}
+    flex-direction: column-reverse
+  img
+    margin: 1%
+    max-width: 48%
+    @media #{$mobile}
+      max-width: 100%
+  div
+    margin: 1%
+    max-width: 48%
+    @media #{$mobile}
+      max-width: 100%
+
+.social
+  font-weight: bold

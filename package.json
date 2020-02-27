@@ -1,0 +1,15 @@
+{
+  "name": "doonooch",
+  "version": "0.0.1",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "prettier": "^1.19.1",
+    "pug": "^2.0.4",
+    "sass": "^1.26.1"
+  },
+  "scripts": {
+    "serve": "parcel serve src/**/*",
+    "build": "parcel build src/**/*",
+    "deploy": "yarn build && firebase deploy"
+  }
+}
