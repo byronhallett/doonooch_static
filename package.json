@@ -4,7 +4,7 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "prettier": "^1.19.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sass": "^1.26.1"
   },
   "scripts": {
